@@ -14,14 +14,14 @@ Set-up database models for users having the following roles
 * Principal
 * Result Admins
 
-with the following kinds of permissions
+## Permissions
 
-view:student-details
-view:students
-modify:student
+* view:student-details
+* view:students
+* modify:student
 
-modify:student-details
-view:results
+* modify:student-details
+* view:results
 
-modify:results
-delete:results
+* modify:results
+* delete:results
