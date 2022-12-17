@@ -35,7 +35,7 @@ def create_app(test_config=None):
     @app.route("/")
     @cross_origin()
     def hello():
-        """Returm Hello"""
+        """Return Hello"""
         return "Hello"
 
 

@@ -1,6 +1,3 @@
-import os
-import json
-
 from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
 
