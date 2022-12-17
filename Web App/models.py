@@ -1,6 +1,7 @@
 from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
 
+
 from dotenv import dotenv_values
 
 env_variables = dotenv_values()

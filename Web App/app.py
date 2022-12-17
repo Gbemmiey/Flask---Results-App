@@ -4,17 +4,32 @@ from flask import Flask, render_template, request, Response, flash, redirect, ur
 from flask_moment import Moment
 from flask_migrate import Migrate
 
-from models import setup_db
+from sqlalchemy import Column, String, Integer
+from flask_sqlalchemy import SQLAlchemy
 
 
 
 app = Flask(__name__)
+db = SQLAlchemy(app)
 moment = Moment(app)
 app.config.from_object('config')
-db = setup_db(app)
-
 
 migrate = Migrate(app, db)
+
+
+class Staff(db.Model):
+    """
+    Model created for school staff
+    """
+    __tablename__ = 'staff'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    role = Column(String)
+
+    def __init__(self, name, role):
+        self.name = name
+        self.role = role
 
 
 @app.route("/")
