@@ -20,7 +20,7 @@ migrate = Migrate(app, db)
 @app.route("/")
 def hello():
     """Return Hello"""
-    return "Hello"
+    return render_template('pages/index.html')
 
 
 
