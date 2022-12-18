@@ -38,6 +38,16 @@ def hello():
     return render_template('pages/index.html')
 
 
+@app.route("/login")
+def display_login():
+    """Displays login page"""
+    return render_template('forms/login.html')
+
+@app.route("/signup")
+def display_signup():
+    """Displays login page"""
+    return render_template('forms/signup.html')
+
 
 @app.errorhandler(404)
 def not_found(error):
