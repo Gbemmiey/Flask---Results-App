@@ -70,3 +70,7 @@ def unprocessable_entity(error):
         'error': 422,
         'message': 'Unprocessable Entity'
     }), 422
+
+
+if __name__ == '__main__':
+   app.run()
