@@ -47,6 +47,10 @@ def display_signup():
     """Displays login page"""
     return render_template('forms/signup.html')
 
+@app.route('/auth', methods=['POST'])
+def authenticate_user():
+    flash("Logged In!")
+    return hello()
 
 @app.errorhandler(404)
 def not_found(error):
@@ -72,4 +76,4 @@ def unprocessable_entity(error):
 
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0', port=5000)
+   app.run(debug=True)
