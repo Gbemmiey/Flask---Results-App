@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/index.css')}}">
+
 </head>
+
 <body>
-    <h1>Results Application</h1>
+    <header>
+        <nav>
+            <div id="logo">
+                <img class="nav-image" src="{{url_for('static', filename='images/acad-logo.png')}}" alt="Logo">
+            </div>
+            <div id="links">
+                <ul>
+                    <li><a href="/about"> About</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/signup">Signup</a></li>
+                </ul>
+            </div>
+            <div id="user-profile">
+                <img class="nav-image" src="{{url_for('static', filename='images/profile.png')}}"
+                    salt="Profile Picture">
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="https://img.freepik.com/free-photo/businesspeople-meeting-plan-analysis-graph-company-finance-strat_74952-1400.jpg?w=900&t=st=1674233069~exp=1674233669~hmac=74fe542d5e4a936bcf199bdc4fba5ec9a291e4dda00888f16b55b94c73d0a924"
+            alt="Banner Image" id="banner-image">
+    </section>
+
+    <section id="overview">
+        <div class="description">
+            <div class="desc desc-text">
+                <h3>Overview</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus natus quia, dignissimos aut ipsum
+                    officiis sunt mollitia perferendis magnam nesciunt harum eaque vitae. Voluptate, blanditiis.
+                    Doloremque culpa magni minus.</p>
+            </div>
+
+            <img class="desc desc-image"
+                src="https://img.freepik.com/free-photo/online-survey-3d-render-laptop-form-with-ticks_107791-15911.jpg?w=826&t=st=1674231758~exp=1674232358~hmac=e5c2c9460ca1412216dee95b6947af16af2693aed612610a43c3e897c1e326f7"
+                alt="Image of Results" class="description" id="overview-image">
+
+        </div>
+
+    </section>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
