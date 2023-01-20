@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: aliceblue;
+  height: 50px;
+  padding: 0 2.5%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  background-color: aliceblue;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  list-style: none;
+}
+li {
+  margin-right: 16px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  padding: 4px;
+  background-color: green;
+  border-radius: 4px;
+  color: white;
+}
