@@ -1,3 +1,5 @@
+$background-link: aliceblue;
+
 * {
   box-sizing: border-box;
 }
@@ -6,11 +8,10 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background: aliceblue;
+  background: $background-link;
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -66,8 +67,7 @@ a:hover {
 
 #banner-image {
   height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   filter: opacity(40%);
 }
@@ -76,11 +76,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
+//   padding: 0 2.5%;
   background-color: dimgrey;
   align-items: flex-start;
+  img {
+    height: 200px;
+    object-fit: contain;
+  }
 }
-.description img {
-  height: 200px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}/*# sourceMappingURL=index.css.map */
