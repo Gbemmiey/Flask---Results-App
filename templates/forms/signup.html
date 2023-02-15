@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up!</title>
-</head>
-<body>
-    <h1>Create an account!</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/signup.css')}}"
+    />
+    <script src="{{url_for('static', filename='scripts/forms/signup/signup.js')}}"></script>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Create an account</h1>
+      <form action="/auth" method="post">
+        <div class="email form">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="password form">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="password" id="pwrd1" />
+        </div>
+        <div class="password form">
+          <label for="password">Verify password</label>
+          <input type="password" name="password" class="password" id="pwrd2" />
+        </div>
+        <span id="check-pass"> .... </span>
+        <button onclick="checkPasswords()">Check Pass</button>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
 </html>

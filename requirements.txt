@@ -20,3 +20,4 @@ Werkzeug==2.2.2
 flask-moment
 flask-babel
 gunicorn
+pyjwt
