@@ -74,29 +74,32 @@ a:hover {
 }
 
 .description {
-  background-color: antiquewhite;
   display: flex;
-  width: 60%;
+  background-color: antiquewhite;
+  width: 70%;
   height: auto;
   justify-content: space-between;
   align-items: center;
   margin: 50px auto;
 }
+
 .desc {
-  width: 100%;
+  width: 47%;
   height: 100%;
 }
+
 .desc-text {
   padding: 0 2.5%;
+  margin: 0 auto 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 50%;
 }
+
 img.desc-image {
-  width: 50%;
+  margin: 0 0 0 auto;
   height: 400px;
   object-fit: cover;
 }
